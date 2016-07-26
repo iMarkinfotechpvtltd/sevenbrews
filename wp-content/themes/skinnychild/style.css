@@ -1,0 +1,61 @@
+
+/*
+Theme Name:   Skinny Child
+Theme URI:    http://pixelgrapes.com/demo/skinny/
+Author:       PixelGrapes
+Author URI:   http://pixelgrapes.com
+Template:     skinny
+License:
+License URI:
+Tags: two-columns, three-columns, right-sidebar, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain:  skinny-child
+*/
+
+
+@font-face { font-family: 'icomoon'; src: url('fonts/icomoon.eot?lw5sv2'); src: url('fonts/icomoon.eot?lw5sv2#iefix') format('embedded-opentype'),  url('fonts/icomoon.ttf?lw5sv2') format('truetype'),  url('fonts/icomoon.woff?lw5sv2') format('woff'),  url('fonts/icomoon.svg?lw5sv2#icomoon') format('svg'); font-weight: normal; font-style: normal; }
+
+a { text-decoration: none; }
+
+figure.gallery-item { float: left; display: block; padding: 0px; margin: 2px; }
+
+.logo { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; }
+
+header.scrolled .logo { max-width: 72px; top: 10px; }
+
+body.admin-bar header.scrolled .logo { top: 40px;}
+
+.parallax-section:after, .sk-section .bg-stretch:after { background: none !important; }
+
+.image-list span.img-caption { border: 0; font-weight: 500; color: #000; }
+
+.image-list a:hover span.img-caption { color: #36b1da; }
+ @media (min-width: 768px) {
+
+.footer-nav { width: 21.3%; }
+
+.subscribe-block { padding-top: 0; }
+}
+
+.subscribe-block input:focus, .skinny-contact-form input:focus, .subscribe-block textarea:focus, .skinny-contact-form textarea:focus { outline: none; }
+
+.subscribe-block input.wpcf7-not-valid, .skinny-contact-form input.wpcf7-not-valid, .skinny-contact-form textarea.wpcf7-not-valid { border-color: red !important; }
+
+.subscribe-block span.wpcf7-not-valid-tip, .subscribe-block div.wpcf7-validation-errors, .skinny-contact-form span.wpcf7-not-valid-tip, .skinny-contact-form div.wpcf7-validation-errors { display: none !important; }
+
+.skinny-contact-form input[type="submit"] { height: 46px; border-radius: 0; }
+
+.woocommerce ul.product_list_widget li { margin: 0 0 10px; }
+
+.subscribe-block h2 { font-size: 18px; font-weight: 700; line-height: 1.5; padding: 0 60px; position: relative; top: -5px; }
+
+[itemprop="description"] ul { padding: 0 0 0 20px; }
+
+[itemprop="description"] ul li { list-style: disc; }
+
+.seven-news input[type="submit"] { border-radius: 0; height: 36px; margin: 0 auto; }
+
+.footer-nav .doc { float: left; max-width: 100%; text-align: left; }
+
+.footer-nav .doc li a { color: #000; font-size: 18px; }
+
+.footer-nav .doc li a:hover { color: #36b1da; }

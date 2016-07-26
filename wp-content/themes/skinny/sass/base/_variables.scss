@@ -1,0 +1,67 @@
+// Colors
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+$gray: #f3f3f3;
+$gray_darken: #ebefef;
+$black: #000;
+$white: #fff;
+$green: #36b1da;
+$submarine: #b8c3c9;
+$storm_dust: #2a414d;
+$davy_gray: #555555;
+$silver_chalice: #aaa;
+$alto: #ddd;
+$red: #f00;
+$woodsmoke : #161b1f;
+
+$base-font-sans-serif: 'Helvetica Neue', Helvetica, sans-serif;
+$base-font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
+$open-sans: 'Open Sans', $base-font-sans-serif;
+
+// Body
+$base-text-color: #282d35 !default;
+$base-background-color: $white !default;
+$base-font-size: 14px !default;
+$base-line-height: 1.5 !default;
+$base-font-family: $open-sans !default;
+$base-font-weight: 300;
+
+$vertical-rhythm: ($base-line-height * 1em);
+
+$base-min-width: 320px;
+
+// Links
+$base-link-color: $green;
+
+// Buttons 
+$btn-color: $white !default;
+$btn-background: $black !default;
+$btn-padding: 1em 0.7em !default;
+$btn-font-size: inherit !default;
+
+// Forms
+$form-element-background: $gray !default;
+$form-element-padding: $btn-padding !default;
+$form-element-border-color: transparent !default;
+$form-element-focus-border-color: $green !default;
+$placeholder-color: #999 !default;
+
+// Headers
+$h1-font-size: 30px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 18px !default;
+$h4-font-size: 12px !default;
+$h5-font-size: 10px !default;
+$h6-font-size: 8px !default;
+
+$headings-font-family: $open-sans !default;
+$headings-color: inherit !default;
+$heading-font-weight: 300;
+
+$animation-speed: 0.3s;
+
+$lightColor: #efeff4;
+$darkColor: #282828;
+$whD: 3000px;
+$opticalCorrection: 2; //Optical correction of black and white

@@ -1,0 +1,11 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">pb_content</custom-field>
+        <custom-field action="translate">page_subtitle</custom-field>
+    </custom-fields>  
+    <admin-texts>
+        <key name="theme_mods_skinny">
+            <key name="copyright" />
+        </key>
+    </admin-texts>    
+</wpml-config>

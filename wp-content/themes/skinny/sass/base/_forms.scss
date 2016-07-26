@@ -1,0 +1,156 @@
+// forms
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  background-color: $form-element-background;
+  box-sizing: border-box;
+  border: 1px solid $form-element-border-color;
+  padding: $form-element-padding;
+
+  // &:hover {
+    
+  // }
+
+  &:focus {
+    border-color: $form-element-focus-border-color;
+  }
+
+  @include placeholder {
+    color: $placeholder-color;
+  }
+}
+.column-5 {
+	input[type='text'],
+	input[type='tel'],
+	input[type='email'],
+	input[type='search'],
+	input[type='password'],
+	//input[type='url'],
+	// input[type='date'],
+	textarea {
+		background: $white;
+	}
+	.jcf-select {
+		margin: 0;
+	}
+	 .calc_shipping_state  {
+	 display:none;
+    }
+}
+select {
+  -webkit-border-radius: 0;
+}
+
+textarea {
+  resize: vertical;
+  vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+	
+	@include animate(background color border-color);
+	background: $green;
+	color: $white;
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	min-width: 120px;
+	&:hover {
+		background: $white;
+		color: $green;
+		border-color: $green;
+	}
+	&:focus {
+		outline: none;
+	}
+
+	@include media(">=tablet") {
+		@include dimension(none, 38px);
+		border-radius: 30px;
+		padding: 0 25px;
+	}
+
+	@include media(">=widescreen") {
+		height: 56px;
+	}
+}
+.widget_search {
+	margin-bottom: 20px;
+	.screen-reader-text {
+		display: none;
+	}
+	input[type="search"] {
+		background: $gray;
+		width: 100%;
+		padding: 10px 20px;
+		border-radius: 20px;
+		margin-bottom: 7px;
+		&:focus {
+			outline: none;
+		}
+
+		@include media(">=tablet") {
+			@include font(12px);
+			width: 61.7%;
+			float: left;
+			padding: 10px 15px;
+			margin-right: 5px;
+			border-radius: 30px;
+			float: left;
+		}
+
+		@include media(">=widescreen") {
+			@include font(14px);
+			padding: 18px 34px;
+			margin-right: 10px;
+		}
+	}
+}
+span {
+	&.required {
+		margin-left: -11px;
+	}
+}
+.skinny-contact-form {
+	h2 {
+		text-align: center;
+		padding: 0 0 40px;
+	}
+.wpcf7-form {
+	width: 80%;
+	margin: auto;
+	input[type="text"],
+	input[type="tel"], 
+	input[type="email"], 
+	input[type="search"], 
+	input[type="password"], textarea {
+		width: 100%;
+	}
+}
+}

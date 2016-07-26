@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(".sk-select select").fontIconPicker()});

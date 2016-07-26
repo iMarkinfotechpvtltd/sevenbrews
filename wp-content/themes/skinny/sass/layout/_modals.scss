@@ -1,0 +1,200 @@
+/*--------------------------------------------------------------
+>>> MODALS
+----------------------------------------------------------------*/
+
+.popup-section {
+	@include position(fixed, 0, 0, 0, 0);
+	@include animate(opacity);
+	background: $white;
+	min-width: $base-min-width;
+	max-height: calc(100vh);
+	padding: 70px 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 9999;
+	.popup-active & {
+		opacity: 1;
+		visibility: visible;
+	}
+	&.split {
+		padding:0;
+		.another {
+			@include font(21px, 1);
+			right: 27px;
+			top: 40px;
+			border: none;
+			background-color: $gray;
+			color: $davy_gray;
+			z-index: 2;
+			&:hover {
+				background-color: $green;
+				color: $white;
+			}
+
+			@include media(">=tablet") {
+				right: 27px;
+				top: 40px;
+			}
+
+			@include media(">=desktop") {
+				right: 27px;
+				top: 40px;
+			}
+
+			@include media(">=widescreen") {
+				right: 27px;
+				top: 40px;
+			}
+
+			@include media(">=widescreen", "<1500px") {
+				right: 27px;
+				top: 40px;
+			}
+		}
+	}
+	&:after {
+		@include media(">=tablet") {
+			@include position(fixed, 60px, 0, 0, 55%);
+			background: $gray;
+			content: '';
+			z-index: -1;
+			pointer-events: none;
+		}
+
+		@include media(">=desktop") {
+			top: 0px;
+		}
+	}
+
+	@include media(">=tablet") {
+		max-height: calc(100vh);
+		top: 0px;
+		padding: 150px 15px 50px;
+	}
+
+	@include media(">=desktop") {
+		top: 0px;
+		padding: 206px 15px 100px;
+	}
+	.another {
+		@include font(21px, 1);
+		top: -30px;
+		right: 10px;
+
+		@include media(">=tablet") {
+			top: -90px;
+		}
+
+		@include media(">=desktop") {
+			top: -127px;
+			right: 20px;
+		}
+
+		@include media(">=widescreen") {
+			right: -23px;
+		}
+
+		@include media(">=widescreen", "<1500px") {
+			right: 7px;
+		}
+	}
+	.container {
+		position: relative;
+	}
+	.icon-holder {
+		&.sk-empty {
+			right: 40%;
+		}
+		@include dimension(70px, 70px);
+		@include font(32px, 1);
+		@include v-align(100%, middle, after);
+		background: $gray;
+		color: $green;
+		border-radius: 50%;
+		margin-bottom: 40px;
+
+		@include media(">=tablet") {
+			@include dimension(90px, 90px);
+			@include position(absolute, -159px, auto, auto, 0);
+			@include font(44px);
+		}
+
+		@include media(">=desktop") {
+			@include dimension(120px, 120px);
+			left: 37px;
+		}
+	}
+}
+
+.sk-loader-bg {
+	background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20% 0;
+    margin: 0;
+	z-index: 999;
+	visibility: hidden;
+	opacity:0;
+	display: flex;
+	align-items: center;
+	@include animate(opacity);
+}
+.sk-loader-bg.show {
+	opacity: 1;
+	visibility: visible;
+	@include animate(opacity);
+}
+      .sk-loader {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        background-color: transparent;
+        border: 5px solid #ECEFF1;
+        border-radius: 50%;
+		margin: auto;
+      }
+.sk-loader:after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $green transparent transparent transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: ringrotate .8s infinite ease-in-out;
+        -webkit-animation: ringrotate .8s infinite ease-in-out;
+      }
+@keyframes ringrotate {
+        0% {
+          transform: rotateZ(0deg);
+          -webkit-transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+          -webkit-transform: rotateZ(360deg);
+        }
+      }
+      @-webkit-keyframes ringrotate {
+        0% {
+          transform: rotateZ(0deg);
+          -webkit-transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+          -webkit-transform: rotateZ(360deg);
+        }
+      }

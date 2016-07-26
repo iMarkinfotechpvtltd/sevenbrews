@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+>>> WIDGETS
+----------------------------------------------------------------*/
+
+.widget_rss li {
+	padding: 0 0 20px;
+}
+.widget_rss li cite {
+	font-weight: 500;
+}
+a.rsswidget {
+	font-weight: 500;
+}
+.rss-date {
+	width: 100%;
+	float: left;
+	padding: 5px 0;
+	font-style: italic;
+}
+.widget-area .widget_calendar table{
+  width: 68%;
+  border-collapse: none;
+}
+#wp-calendar caption {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #ededed;
+    margin: 0 0 10px;
+    padding: 10px 0;
+  @include media("<=tablet") {
+	  width: 100%;
+  }
+}
+#wp-calendar tbody {
+	text-align:center;
+}
+#wp-calendar tbody td a {
+	background:#3997ab;
+	color:#fff;
+	padding:0 4px;
+}

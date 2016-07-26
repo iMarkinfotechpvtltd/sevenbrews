@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+>>> COMMENTS
+----------------------------------------------------------------*/
+
+.comments-area {
+	padding-top:60px;
+	border-top: 1px solid rgba(178, 179, 153, 0.125);
+    .comments {
+      max-width: 450px;
+      min-width: 300px;
+      margin: 50px auto;
+	  @include font(14px, 20px);
+      article {
+        position: relative;
+        border-bottom: solid 1px rgba(178, 179, 153, .125);
+        margin: 0 auto 50px auto;
+
+        &:last-child {
+          border: none;
+        }
+        
+        &:hover {
+          time {
+            opacity: .75;
+          }
+        }
+
+        img {
+          position: relative;
+		  width: 50px;
+          height: 50px;
+          border-width: 0;
+          border-radius: 100%;
+		  @include media(">=desktop") {
+			  position: absolute;
+	          top: -10px;
+	          left: -70px;
+		  }
+        }
+        h4 {
+          margin-bottom: 25px;
+		  .comment-author-link {
+			  font-size: 14px;
+		  }
+          a {
+            color: #404040;
+            text-transform: lowercase;
+            text-decoration: none;
+          }
+        }
+        time {
+		  display:inline;
+          margin-right: 40px;
+          opacity: 1;
+		  font-size:12px;
+          
+          &:hover {
+            opacity: .44;
+            cursor: pointer;
+          }
+        }
+        p {
+          margin-bottom: 50px;
+
+          .reply {
+            cursor: pointer;
+          }
+		  &.comment-meta-item {
+			  margin: -20px 0 10px;
+			  @include font(12px, 20px);
+		  }
+        }
+		a.comment-reply-link {
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include font(12px, 20px);
+			text-decoration: none;
+		}
+      }
+    }
+	.comment-form {
+		float:left;
+		width:100%;
+		p {
+			float:left;
+			width:100%;
+			display:inline-block;
+		}
+		span {
+			float:left;
+			&.required {
+				margin-left: -10px;
+			}
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			background: $white;
+			width: 100%;
+			padding: 10px 20px;
+			margin-bottom: 7px;
+			&:focus {
+				outline: none;
+			}
+
+			@include media(">=tablet") {
+				@include font(12px);
+				width: 61.7%;
+				float: left;
+				padding: 10px 15px;
+				margin-right: 5px;
+			}
+
+			@include media(">=widescreen") {
+				@include font(14px);
+				padding: 18px 34px;
+				margin-right: 10px;
+			}
+		}
+		textarea {
+			background: $white;
+		}
+		.form-submit {
+			float:left;
+			width:100%;
+			margin: 20px 0;
+		}
+	}
+}
+#reviews {
+	h2 {
+		display:none;
+	}
+}
+.page .comments-area .comment-form {
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		background: $gray;
+	}
+}

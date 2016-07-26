@@ -1,0 +1,253 @@
+/*--------------------------------------------------------------
+>>> FOOTER
+----------------------------------------------------------------*/
+
+.footer-block {
+	position: relative;
+	@include media(">=tablet") {
+		//height: 1%;
+		//display: table-footer-group;
+		background: $white;
+	}
+}
+
+.footer-navigation {
+	text-align: center;
+	padding: 20px 15px;
+	border-top: 1px solid #ededed;
+
+	@include media(">=tablet") {
+		text-align: left;
+		padding: 30px 15px;
+	}
+
+	@include media(">=widescreen") {
+		padding: 64px 0 40px;
+	}
+
+	.logo {
+		float: none;
+		margin: 0 auto 20px;
+		position: relative;
+		height: 32px;
+		left: 0;
+		img {
+			height: 32px;
+			width: auto;
+		}
+		@include media(">=desktop") {
+			margin-bottom: 31px;
+		}
+	}
+	.post-date {
+		display:block;
+		@include font(11px, 1);
+		color: $silver_chalice;
+	}
+}
+#footer-right {
+	.footer-nav {
+		@include media(">=tablet") {
+			width: 100%;
+		}
+	}
+}
+.footer-nav {
+	text-transform: uppercase;
+	margin-bottom: 35px;
+
+	@include media(">=tablet") {
+		@include font(12px);
+		width: 17.3%;
+		float: left;
+		margin-bottom: 0;
+	}
+	h3 {
+		line-height: 20px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid $gray;
+		color: $woodsmoke;
+		
+		@include media(">=tablet") {
+			@include font(14px, 1, 500);
+			padding: 0 10px 13px 0;
+			margin-bottom: 15px;
+		}
+
+		@include media(">=desktop") {
+			@include font(16px, 1, 500);
+			padding-bottom: 23px;
+			margin-bottom: 30px;
+		}
+	}
+	ul {
+		@extend %listreset;
+
+		@include media(">=tablet") {
+			padding: 0 10px 13px 0;
+		}
+	}
+	li {
+		margin-bottom: 5px;
+
+		@include media(">=tablet") {
+			margin-bottom: 8px;
+		}
+
+		@include media(">=desktop") {
+			margin-bottom: 16px;
+		}
+	}
+	a {
+		@include animate(color);
+		color: #656565;
+		font-weight: 500;
+		text-decoration: none;
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+.subscribe-block {
+	text-align: center;
+	p {
+		margin-bottom: 10px;
+
+		@include media(">=desktop") {
+			margin-bottom: 24px;
+		}
+	}
+
+	@include media(">=tablet") {
+		@include font(14px);
+		color: #555;
+		width: 33.93%;
+		float: right;
+		padding-top: 24px;
+	}
+}
+
+.subscribe-form {
+	input[type="text"],
+	input[type="email"] {
+		background: $gray;
+		width: 100%;
+		padding: 10px 20px;
+		border-radius: 20px;
+		margin-bottom: 7px;
+		&:focus {
+			outline: none;
+		}
+
+		@include media(">=tablet") {
+			@include font(12px);
+			width: 61.7%;
+			float: left;
+			padding: 10px 15px;
+			margin-right: 5px;
+			border-radius: 30px;
+		}
+
+		@include media(">=widescreen") {
+			@include font(14px);
+			padding: 18px 34px;
+			margin-right: 10px;
+		}
+	}
+	input[type="submit"] {
+		@include dimension(100%, 40px);
+		@include animate(background color border-color);
+		background: $green;
+		color: $white;
+		display: block;
+		padding: 5px;
+		border: 1px solid transparent;
+		border-radius: 20px;
+		&:hover {
+			background: $white;
+			color: $green;
+			border-color: $green;
+		}
+		&:focus {
+			outline: none;
+		}
+
+		@include media(">=tablet") {
+			@include dimension(35.5%, 38px);
+			float: left;
+			border-radius: 30px;
+		}
+
+		@include media(">=widescreen") {
+			height: 56px;
+		}
+	}
+}
+
+#footer {
+	@include font(12px);
+	background: $black;
+	text-transform: uppercase;
+	padding: 20px 15px;
+	z-index: 1;
+	position: relative;
+	&.fbord {
+		border-top: 1px solid #ededed;
+	}
+	
+	@include media(">=tablet") {
+		@include font(12px);
+		letter-spacing: 1px;
+		padding-bottom: 24px;
+	}
+	a {
+		@include animate(color);
+		color: $gray;
+		text-decoration: none;
+		&:hover {
+			color: $green;
+		}
+	}
+	.copyright {
+		display: block;
+		margin-bottom: 6px;
+		color: $submarine;
+		@include font(12px);
+		font-weight: 500;
+		a {
+			color: $white;
+		}
+
+		@include media(">=tablet") {
+			max-width: 45%;
+			float: left;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.doc {
+	@extend %listreset;
+	margin-right: -10px;
+
+	@include media(">=tablet") {
+		max-width: 45%;
+		float: right;
+		text-align: right;
+		margin-right: -5px;
+	}
+	li {
+		@include font(14px);
+		a{
+			color: $white;
+		}
+		@include inline-block(top);
+		margin-right: 10px;
+
+		@include media(">=tablet") {
+			margin-right: 15px;
+		}
+	}
+}
