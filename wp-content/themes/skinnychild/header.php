@@ -46,9 +46,9 @@
 					</div>
 			
 					<a href="#" class="nav-opener"><span></span></a>
-					<?php /* if ( class_exists( 'WooCommerce' ) )  { ?>
-						<a href="#" class="cart-opener" data-modal="cart" data-productid=""><span class="icon-cart"></span><span class="counter"><?php echo WC()->cart->get_cart_contents_count(); ?></span></a>
-						<?php }*/ ?>
+					<?php if ( class_exists( 'WooCommerce' ) )  { ?>
+                                                <a href="<?php if(WC()->cart->get_cart_contents_count()){ echo get_permalink(7);} else{ echo '#'; } ?>" class="cart-opener" data-modal="cart" data-productid=""><span class="icon-cart"></span><span class="counter"><?php echo WC()->cart->get_cart_contents_count(); ?></span></a>
+						<?php } ?>
 				    
 				       <div class="skinny-menu-container">
 						   <?php if ( has_nav_menu( 'primary' ) ) { ?>

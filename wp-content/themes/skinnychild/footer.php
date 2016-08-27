@@ -45,13 +45,7 @@ if ( is_active_sidebar( 'footer-main' ) ) {
 			   $linkedin  = get_theme_mod('linkedin_text'); 
 			?>
 					<ul class="doc">
-						<?php if(!empty($twitter)){ ?>
-							<li>
-								<a href="http://twitter.com/<?php echo esc_attr($twitter);?>" target="_blank" class="twitter">
-									<span class="icon-twitter"></span>
-								</a>
-							</li>
-							<?php } ?>
+						
 							<?php if(!empty($facebook)){ ?>
 								<li>
 									<a href="http://facebook.com/<?php echo esc_attr($facebook);?>" target="_blank" class="facebook">
@@ -86,6 +80,13 @@ if ( is_active_sidebar( 'footer-main' ) ) {
                                                                     <span class="icon-instagram">instagram</span>
                                                                </a>  
                                                                 </li>
+                                                                <?php if(!empty($twitter)){ ?>
+							<li>
+								<a href="http://twitter.com/<?php echo esc_attr($twitter);?>" target="_blank" class="twitter">
+									<span class="icon-twitter"></span>
+								</a>
+							</li>
+							<?php } ?>
 					</ul>
 				</div>
 			</footer>

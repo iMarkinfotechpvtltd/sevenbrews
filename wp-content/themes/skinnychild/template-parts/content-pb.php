@@ -543,7 +543,7 @@ endif;?>
 				<?php } ?>
 			<div class="holder">
 				<div class="container">
-					
+					<h2><?php echo esc_attr(get_sub_field('title')); ?></h2>
 					<div class="image-holder skinny-sr <?php echo esc_attr($alignment); ?> <?php 
 							echo esc_attr(get_sub_field('animate')); ?>" style="background-color:<?php echo esc_attr(get_sub_field('color')); ?>;">
 							 <?php if (get_sub_field('overlay_image')): ?>
@@ -566,7 +566,7 @@ endif;?>
 				 	</div>
 					<div class="description">
 						<div class="holder">
-							<h2><?php echo esc_attr(get_sub_field('title')); ?></h2>
+							
 							<?php echo wp_kses_post(get_sub_field('text')); ?>
 							<?php if(get_sub_field('button_text')) : ?>
 							<a class="btn btn-<?php echo esc_attr($btn); ?>" href="<?php echo esc_url(get_sub_field('button_link')); ?>" ><?php 
